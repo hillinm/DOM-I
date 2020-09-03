@@ -18,10 +18,9 @@ setInterval(() => {
   if (secondsTens === 1) {
     return;
   }
-
   milliSTens += 1;
   msTens.textContent = milliSTens;
-}, 10);
+}, 1000);
 
 
 setInterval(() => {
@@ -38,9 +37,9 @@ setInterval(() => {
     secTens.textContent = secondsTens;
     secOnes.textContent = secondsOnes;
 
-    
     const colon1 = document.getElementById("colon")
     colon1.style.color = "red";
+    
   } else {
     secondsOnes = secondsOnes + 1
     secOnes.textContent = secondsOnes
